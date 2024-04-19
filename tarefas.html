@@ -1,1 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+       <h2>Tarefas</h2>
+       <input type="text" id="tarefaInput">
+       <button onclick="exibirDados()">Adicionar</button>
+       <button onclick="listarTarefas()">Relatório de Tarefas</button>
+       </br>
+       </br>
+       <h2>Lista de Tarefas:</h2>
+       <div id="dadosTarefas"></div>
 
+    </div>
+<script>
+    var produtos = [
+    { tarefa: 1, descricao: 'Tarefa 1', tarefa: "tirar lixo" },
+    { tarefa: 2, descricao: 'Tarefa 2', tarefa: "tomar remedio" },
+    { tarefa: 3, descricao: 'Tarefa 3', tarefa: "trocar água do gato" },
+
+   ];
+
+    function exibirDados() {
+      var tarefa = document.getElementById("tarefaInput").value;
+
+      dadosProduto.innerHTML =
+
+    };
+  
+    function listarTarefas() {
+        var conteudo = "";
+
+                for (var i = 0; i < produtos.length; i++) {
+    
+           conteudo += "Código: " + produtos[i].codigo + "<br>";
+           };                  //array, posição array, laço
+
+             dadosTarefas.innerHTML = conteudo;
+         
+    }
+
+
+</script>
+
+</body>
+</html>
