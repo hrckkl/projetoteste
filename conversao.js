@@ -1,9 +1,9 @@
-var reais = prompt("Digite o valor em reais:")
+var reais = parseFloat(prompt("Digite o valor em reais:"))
 var dolar
 
 function conversão(reais){
 reais = parseInt(reais)
-dolar = reais/5
+dolar = reais/5.14
   console.log(dolar)
 }
 
