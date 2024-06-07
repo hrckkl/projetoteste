@@ -1,0 +1,20 @@
+# entre 4 e 6, exame, tirar media = 3 notas, abaixo de 4 reprova sla
+
+nota1 = 8
+nota2 = 6
+nota3 = 10
+media = 6
+
+
+mediaN = (nota1 + nota2 + nota3)/3
+print(mediaN)
+
+if mediaN >= media:
+  print('Aprovado')
+elif mediaN < media and mediaN >= 4:
+  print('Exame')
+else:
+  print('Reprovado')
+ 
+# int () transformar string em numero
+# forma em cima ou nota1  = int(nota1)
