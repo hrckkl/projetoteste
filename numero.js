@@ -3,7 +3,7 @@ var numero2 = 8
 
 
 if(numero2 == numero1){
-  console.log("Ambos são iguai.")
+  console.log("Ambos são iguais.")
   
 }else if(numero2 > numero1){
   console.log(numero2 + " é maior que " + numero1)
