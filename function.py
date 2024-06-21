@@ -5,15 +5,24 @@
 
 #saldo()
 #print(valor)
-
+\\\\\
 #valor = 0
 
+#def saldo(valor):
+ #  valor += 1000
+ #  return valor
 
+ #print(saldo(valor))
 
-def saldo(valor):
-   valor += 1000
-   return valor
+\\\\\\\
 
- print(saldo(valor))
+saldo = 0
 
-saldo()
+def depositar(saldo):
+   deposito = int(input("Digite o valor: "))
+   saldo += deposito
+   print(f'{deposito},00 reais depositado')
+
+   return saldo
+
+print(f'saldo de R${depositar(saldo)},00')
