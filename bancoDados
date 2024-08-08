@@ -1,0 +1,24 @@
+1periodo {
+	Matéria varchar pk increments unique > Faltas_1periodo.quantidade
+	nota_provas integer null def(2) > Boletim_1trimestre.Nota
+	nota_trabalhos integer null def(2) > Boletim_1trimestre.Nota
+}
+
+Faltas_1periodo {
+	Matéria varchar pk increments unique def(20)
+	quantidade integer > Boletim_1trimestre.Falta
+}
+
+Boletim_1trimestre {
+	aluno varchar pk > Login.id_cpf
+	turma integer
+	Disciplina varchar def(45)
+	Nota integer increments
+	Falta integer
+}
+
+Login {
+	id_cpf integer pk increments unique > Boletim_1trimestre.aluno
+	id_senha integer unique > 1periodo.Matéria
+}
+
