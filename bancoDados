@@ -22,3 +22,30 @@ Login {
 	id_senha integer unique > 1periodo.Matéria
 }
 
+
+
+
+cliente {
+	nome_cliente varchar(45)
+	porte varchar(45)
+	cpf integer pk unique
+	telefone integer unique
+	nome_pet varchar(45)
+	raça varchar(45)
+}
+
+serviços {
+	exames_laboratório integer
+	serviços_veterinarios integer
+	spa integer
+	porte integer
+	banho integer
+	tosa integer
+	id_serviço_serviços integer > historico.id_serviço
+}
+
+historico {
+	id_serviço integer pk increments unique
+}
+
+
